@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taxi Booking Website</title>
+  
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+ 
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+    <div class="container">
+      <!-- Brand/logo -->
+      <a class="navbar-brand mr-auto" href="#"><span class="drive">drive</span><span class="hi">hi</span><span class="drive"> r</span><span class="hi">e</span></a>
+      
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Book a Ride</a>
+          </li>
+          <li class="nav-item dropdown" id="serviceDropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownService" role="button" aria-haspopup="true" aria-expanded="false">
+              Service
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownService">
+              <a class="dropdown-item" href="">Driver On Demand</a>
+              <a class="dropdown-item" href="">Driver On Permanent</a>
+              <a class="dropdown-item" href="">Driver On Contract</a>
+              <a class="dropdown-item" href="">Cargo Service Driver</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" id="howItWorksDropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHowItWorks" role="button" aria-haspopup="true" aria-expanded="false">
+              How It Works
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownHowItWorks">
+              <a class="dropdown-item" href="how-it-works-outstation.php">Outstation Driver</a>
+              <a class="dropdown-item" href="how-it-works-permanent.php">Permanent Driver</a>
+            </div>
+          </li>
+          <!-- Spacer -->
+          <li class="nav-item" style="margin-right: 20px;"></li>
+          <!-- Buttons -->
+          <li class="nav-item">
+            <button class="btn btn-custom">2343456</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-custom ml-3">Book Now</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="sticky-icon">
+    <a href="https://tse3.mm.bing.net/th?id=OIP.enG2QUteotudVRb6SlpX8wHaHZ&pid=Api&P=0&h=220" class="Instagram">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="#" class="Facebook">
+      <i class="fab fa-facebook-f"> </i> Facebook
+    </a>
+    <a href="#" class="Calling">
+      <i class="fas fa-phone"></i> Call Us
+    </a>
+    <a href="#" class="Youtube">
+      <i class="fab fa-youtube"></i> Youtube
+    </a>
+    <a href="#" class="WhatsApp">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+    <!-- Add the URL icon here -->
+   
+  </div>
+  <!--End Sticky Icon-->
+
+  <!-- Content Goes Here -->
+  <div class="breadcumb-wrapper" style='background-image:url("https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZHJpdmluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80")' data-overlay="title" data-opacity="4">
+    <div class="container z-index-common">
+      <h1 class="breadcumb-title">Drivers On Demand</h1>
+      <ul class="breadcumb-menu">
+        <li><a href="index.php">Home</a></li>
+        <li>Service Details</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Section with red box -->
+  <section class="space position-relative">
+    <div class="container">
+      <div class="price-box-wrap red-box">                               		
+        <div class="text-uppercase text-white price-box_package layer-btn"><a href="tel:12366" style="color:white;">1236</a></div>			
+        <h3 class="elementor-heading-title text-white elementor-size-default">CALL US TO HIRE A DRIVER&nbsp;</h3>
+        <h4 class="elementor-heading-title text-white elementor-size-default">Driver on hire in Delhi, Bangalore, Chandigarh, Dehradun, Hyderabad, Jaipur, Kolkata, Lucknow, Mumbai, Pune, Thane, Varanasi&nbsp;</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup -->
+  <div id="popup">
+    <span class="close-icon" onclick="hidePopup()">X</span>
+    Call Us: 1236
+    <br />
+    WhatsApp: 1236
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4 class="footer-title">About Company</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-md-3">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4 class="footer-title">Services</h4>
+          <ul>
+            <li>Web Design</li>
+            <li>Graphic Design</li>
+            <li>SEO</li>
+            <li>Marketing</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4 class="footer-title">Contact Details</h4>
+          <p>123 Street Name, City, Country</p>
+          <p>Email: info@example.com</p>
+          <p>Phone: +123456789</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JavaScript for dropdown on hover -->
+  <script>
+    $(document).ready(function() {
+      $('#serviceDropdown').hover(function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
+      }, function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
+      });
+      $('#howItWorksDropdown').hover(function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
+      }, function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
+      });
+    });
+
+    function hidePopup() {
+      $('#popup').hide();
+    }
+  </script>
+</body>
+</html>
